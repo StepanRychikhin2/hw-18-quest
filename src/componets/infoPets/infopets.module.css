@@ -1,0 +1,41 @@
+.list{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    /* white-space: nowrap;  */
+    /* width: 1000px;  */
+    /* box-sizing: border-box;  */
+    /* overflow: hidden; */
+}
+li{
+    /* display: inline; */
+  padding: 0.5rem;
+}
+
+.imgCats{
+    width: 500px;
+}
+.btnSrl {
+    position: sticky;
+    top: 20px;
+    margin-left: 25px;
+    
+}
+.btn{
+    border-radius: 20px;
+    border: 0;
+    width: 90px;
+    height: 30px;
+margin-left: 10px;
+-webkit-transition: 0.4s;
+	transition: 0.4s;
+}
+
+.btn:hover {
+    background-color: bisque;
+    -webkit-transition: 0.4s;
+	transition: 0.4s;
+}
