@@ -8,7 +8,7 @@ function InfoPanelPets() {
         const listNode = listRef.current;
 
 // console.log(listNode)
-const items = listNode.querySelectorAll("li > img")[index]
+const items = listNode.querySelectorAll("li")[index]
 items.scrollIntoView({
     behavior:"smooth",
     block: "nearest",

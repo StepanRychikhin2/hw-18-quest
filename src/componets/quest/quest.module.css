@@ -1,0 +1,69 @@
+.listQestt {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	list-style: none;
+}
+.btnCheck {
+	margin-top: 30px;
+	width: 140px;
+	height: 40px;
+	border-radius: 20px;
+	border: 0;
+	-webkit-transition: 0.4s;
+	transition: 0.4s;
+	position: relative;
+}
+.btnCheck:hover {
+	/* border: 1px solid red; */
+	background-color: antiquewhite;
+	-webkit-transition: 0.4s;
+	transition: 0.4s;
+}
+
+.box {
+	margin-bottom: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.sectionV {
+	border: 0;
+	border-radius: 10px;
+	width: 100px;
+	height: 25px;
+	position: relative;
+	background-color: rgb(228, 217, 69);
+}
+
+.btnCheck::after,
+.btnCheck::before {
+	border-radius: 20px;
+	content: ' ';
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background: linear-gradient(
+		90deg,
+		rgba(133, 82, 3, 1) 0%,
+		rgba(235, 68, 23, 1) 51%,
+		rgba(110, 113, 0, 1) 100%
+	);
+	top: 50%;
+	left: 50%;
+	translate: -50% -50%;
+	z-index: -1;
+	padding: 0px;
+}
+
+.btnCheck::before {
+	filter: blur(15px);
+	opacity: 1;
+}
+
+.sectionV:hover {
+	border: 1.5px solid rgb(144, 148, 82);
+}

@@ -5,18 +5,17 @@ function Header() {
 	const [theme, setTheme] = useState('light')
 	// console.log(theme)
 	const mdd = document.querySelector('body')
-	console.log(mdd)
+	// const p = document.querySelector('p')
+	// console.log(p)
 	const classNamee = 'panel-' + theme
 	mdd.classList.remove('panel-dark', 'panel-light')
 	mdd.classList.add(classNamee)
-
+	// p.classList.add("dark")
 	return (
 		<header className={sty.header}>
-            <h1>Pet quest</h1>
+			<h1>Pet quest</h1>
 			<ThemeContext.Provider value={theme}>
-            
 				<label className={sty.switch}>
-                    
 					<input
 						type="checkbox"
 						checked={theme === 'dark'}
